@@ -3,4 +3,5 @@ tests_output
 chromedriver.log
 geckodriver.log
 .gitignore
+debug.log
 
