@@ -1,13 +1,14 @@
 module.exports = {
     'Top Banner Elements Logo': function(browser) {
 
-        const cchcLogo = '#app > div > header > div > div > a > img';
+        const page = browser.page.webPostulationPJ();
 
+        page
+            .navigate()
+            .maximizeWindow()
+            .assert.elementPresent('@cchcLogo')
 
         browser
-            .url('https://postulacionwebqa.cchc.cl/')
-            .maximizeWindow()
-            .assert.elementPresent(cchcLogo)
             .saveScreenshot('tests/nuevosSocios/img/TC02.png')
             .pause(3 * 1000)
             .end()

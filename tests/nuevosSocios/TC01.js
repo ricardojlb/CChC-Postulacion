@@ -1,10 +1,12 @@
 module.exports = {
     'Open Home Page': function(browser) {
 
+        const page = browser.page.webPostulationPJ();
 
+        page
+            .navigate()
 
         browser
-            .url('https://postulacionwebqa.cchc.cl/')
             .maximizeWindow()
             .assert.title('postulacion-pj-2')
             .saveScreenshot('tests/nuevosSocios/img/TC01.png')
