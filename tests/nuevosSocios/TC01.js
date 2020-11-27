@@ -5,9 +5,9 @@ module.exports = {
 
         page
             .navigate()
+            .maximizeWindow()
 
         browser
-            .maximizeWindow()
             .assert.title('postulacion-pj-2')
             .saveScreenshot('tests/nuevosSocios/img/TC01.png')
             .pause(3 * 1000)

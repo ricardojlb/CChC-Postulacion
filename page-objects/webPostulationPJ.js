@@ -8,6 +8,7 @@ module.exports = {
         middleTitleSt: '#app > div > div > main > div > div > div > div.col-sm-12.col-md-6.c-login__st > div > h2',
         middleTitleCon: '#app > div > div > main > div > div > div > div.col-sm-12.col-md-6.c-login__con > div > h2',
         beginProcessButton: '#app > div > div > main > div > div > div > div.col-sm-12.col-md-6.c-login__st > div > a.btn-red.btn-login',
+        basicDataTitle: '#app > div > div > div > div > div > div.col-md-6.col-lg-5.offset-lg-2 > h2',
 
     },
     commands: [{

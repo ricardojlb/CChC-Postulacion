@@ -1,12 +1,19 @@
 module.exports = {
     'Action Process Button': function(browser) {
 
-        browser
+        const page = browser.page.webPostulationPJ();
 
-            .url('https://postulacionwebqa.cchc.cl/')
-            .windowMaximize()
-            .saveScreenshot('tests/nuevosSocios/img/TC09.png')
-            .pause()
+        page
+            .navigate()
+            .maximizeWindow()
+            .waitForElementVisible('body')
+            .saveScreenshot('tests/nuevosSocios/img/TC09A.png')
+            .click('@beginProcessButton')
+            .assert.visible('@basicDataTitle')
+
+        browser
+            .saveScreenshot('tests/nuevosSocios/img/TC09B.png')
+            .pause(3 * 1000)
             .end()
     }
 }
